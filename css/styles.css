@@ -425,3 +425,119 @@ ul {
   outline: none;
   border-color: var(--cyan);
 }
+/* KIT / CONVERTKIT FORM */
+.kit-form-wrap {
+  max-width: 560px;
+  margin-top: 18px;
+}
+
+.kit-form-wrap--hero {
+  margin-top: 0;
+  min-width: min(520px, 100%);
+}
+
+.form-kicker {
+  margin: 0 0 8px;
+  color: #f5b83d;
+  font-size: 13px;
+  font-weight: 900;
+  text-transform: uppercase;
+  letter-spacing: .08em;
+}
+
+.hero__actions--form {
+  align-items: center;
+}
+
+.formkit-powered-by-convertkit-container,
+.formkit-powered-by,
+.formkit-powered-by-convertkit {
+  display: none !important;
+}
+
+.formkit-form {
+  max-width: 100% !important;
+}
+
+.formkit-fields {
+  display: flex !important;
+  gap: 10px !important;
+  flex-wrap: wrap !important;
+  align-items: center !important;
+}
+
+.formkit-field {
+  flex: 1 1 240px !important;
+  margin: 0 !important;
+}
+
+.formkit-input {
+  width: 100% !important;
+  min-height: 48px !important;
+  padding: 0 16px !important;
+  border-radius: 999px !important;
+  border: 1px solid #dbe7ef !important;
+  font-size: 14px !important;
+  color: #122033 !important;
+  background: #ffffff !important;
+}
+
+.formkit-input:focus {
+  outline: none !important;
+  border-color: #24b7d8 !important;
+}
+
+.formkit-submit {
+  min-height: 48px !important;
+  padding: 0 !important;
+  border: 0 !important;
+  border-radius: 999px !important;
+  background: #f5b83d !important;
+  color: #102033 !important;
+  cursor: pointer !important;
+  font-weight: 900 !important;
+  margin: 0 !important;
+  overflow: hidden !important;
+}
+
+.formkit-submit span {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  min-height: 48px !important;
+  padding: 0 20px !important;
+  color: #102033 !important;
+  font-weight: 900 !important;
+}
+
+.formkit-alert {
+  width: 100% !important;
+  margin: 0 0 10px !important;
+  padding: 10px 12px !important;
+  border-radius: 12px !important;
+  list-style: none !important;
+}
+
+.privacy-note {
+  color: #5f6f7f;
+  font-size: 13px;
+  margin-top: 10px;
+}
+
+@media (max-width: 860px) {
+  .kit-form-wrap,
+  .kit-form-wrap--hero {
+    max-width: 100%;
+    width: 100%;
+  }
+
+  .formkit-fields {
+    flex-direction: column !important;
+    align-items: stretch !important;
+  }
+
+  .formkit-field,
+  .formkit-submit {
+    width: 100% !important;
+  }
+}

@@ -38,21 +38,40 @@
           Identify lifecycle, backup, security, certificate, and upgrade risks across your Cisco UC environment.
         </p>
 
-        <div class="hero__actions">
-          <div class="lead-capture">
-  <form id="leadForm">
-    <input
-      type="email"
-      id="email"
-      name="email"
-      placeholder="Enter your email"
-      required
-    />
-    <button type="submit" class="btn btn--primary">
-      Get Free Checklist
-    </button>
-  </form>
-</div>
+        <div class="hero__actions hero__actions--form">
+          <div class="kit-form-wrap kit-form-wrap--hero">
+            <p class="form-kicker">Get the free checklist</p>
+
+            <form action="https://app.kit.com/forms/9401526/subscriptions"
+              class="seva-form formkit-form"
+              method="post"
+              data-sv-form="9401526"
+              data-uid="2e1146667b"
+              data-format="inline"
+              data-version="5"
+              min-width="400 500 600 700 800">
+
+              <div data-style="clean">
+                <ul class="formkit-alert formkit-alert-error" data-element="errors" data-group="alert"></ul>
+
+                <div data-element="fields" data-stacked="false" class="seva-fields formkit-fields">
+                  <div class="formkit-field">
+                    <input class="formkit-input"
+                      name="email_address"
+                      aria-label="Email Address"
+                      placeholder="Enter your email"
+                      required
+                      type="email">
+                  </div>
+
+                  <button data-element="submit" class="formkit-submit">
+                    <div class="formkit-spinner"><div></div><div></div><div></div></div>
+                    <span>Get Free Checklist</span>
+                  </button>
+                </div>
+              </div>
+            </form>
+          </div>
 
           <a class="btn btn--ghost" href="mailto:assessments@ciscomaster.com">
             Request Full Assessment
@@ -110,9 +129,39 @@
           Use the checklist to quickly identify where your UC environment may be exposed before an upgrade, outage, audit, or leadership review.
         </p>
 
-        <a class="btn btn--primary" href="assets/img/ciscomaster/pdf/UC_Checklist_V5_Elite.pdf" download>
-          Download PDF
-        </a>
+        <div class="kit-form-wrap">
+          <form action="https://app.kit.com/forms/9401526/subscriptions"
+            class="seva-form formkit-form"
+            method="post"
+            data-sv-form="9401526"
+            data-uid="2e1146667b"
+            data-format="inline"
+            data-version="5"
+            min-width="400 500 600 700 800">
+
+            <div data-style="clean">
+              <ul class="formkit-alert formkit-alert-error" data-element="errors" data-group="alert"></ul>
+
+              <div data-element="fields" data-stacked="false" class="seva-fields formkit-fields">
+                <div class="formkit-field">
+                  <input class="formkit-input"
+                    name="email_address"
+                    aria-label="Email Address"
+                    placeholder="Enter your email"
+                    required
+                    type="email">
+                </div>
+
+                <button data-element="submit" class="formkit-submit">
+                  <div class="formkit-spinner"><div></div><div></div><div></div></div>
+                  <span>Download Checklist</span>
+                </button>
+              </div>
+            </div>
+          </form>
+        </div>
+
+        <p class="privacy-note">No spam. Just the checklist and practical UC risk guidance.</p>
       </div>
 
       <div class="download__visual">
@@ -195,19 +244,8 @@
     <div><a href="mailto:assessments@ciscomaster.com">assessments@ciscomaster.com</a></div>
   </div>
 </footer>
-<script>
-document.getElementById('leadForm').addEventListener('submit', function(e) {
-  e.preventDefault();
 
-  const email = document.getElementById('email').value;
+<script src="https://f.convertkit.com/ckjs/ck.5.js"></script>
 
-  if (!email) return;
-
-  // OPTIONAL: send to ConvertKit later
-
-  // Trigger download
-  window.location.href = "assets/img/ciscomaster/pdf/UC_Checklist_V5_Elite.pdf";
-});
-</script>
 </body>
 </html>
