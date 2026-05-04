@@ -402,3 +402,26 @@ ul {
     transform: none;
   }
 }
+.lead-capture {
+  margin-top: 20px;
+}
+
+.lead-capture form {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.lead-capture input {
+  flex: 1;
+  min-width: 220px;
+  padding: 14px 16px;
+  border-radius: 999px;
+  border: 1px solid var(--border);
+  font-size: 14px;
+}
+
+.lead-capture input:focus {
+  outline: none;
+  border-color: var(--cyan);
+}

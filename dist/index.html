@@ -39,9 +39,20 @@
         </p>
 
         <div class="hero__actions">
-          <a class="btn btn--primary" href="assets/img/ciscomaster/pdf/UC_Checklist_V5_Elite.pdf" download>
-            Download Free Checklist
-          </a>
+          <div class="lead-capture">
+  <form id="leadForm">
+    <input
+      type="email"
+      id="email"
+      name="email"
+      placeholder="Enter your email"
+      required
+    />
+    <button type="submit" class="btn btn--primary">
+      Get Free Checklist
+    </button>
+  </form>
+</div>
 
           <a class="btn btn--ghost" href="mailto:assessments@ciscomaster.com">
             Request Full Assessment
@@ -184,6 +195,19 @@
     <div><a href="mailto:assessments@ciscomaster.com">assessments@ciscomaster.com</a></div>
   </div>
 </footer>
+<script>
+document.getElementById('leadForm').addEventListener('submit', function(e) {
+  e.preventDefault();
 
+  const email = document.getElementById('email').value;
+
+  if (!email) return;
+
+  // OPTIONAL: send to ConvertKit later
+
+  // Trigger download
+  window.location.href = "assets/img/ciscomaster/pdf/UC_Checklist_V5_Elite.pdf";
+});
+</script>
 </body>
 </html>
