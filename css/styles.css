@@ -50,10 +50,9 @@ img {
 .nav {
   background: rgba(7, 24, 39, .96);
   color: white;
-  position: sticky;
-  top: 0;
+  position: relative;
   z-index: 50;
-  border-bottom: 1px solid rgba(255, 255, 255, .12);
+  border-bottom: 1px solid rgba(255,255,255,.12);
 }
 
 .nav__inner {
@@ -68,14 +67,12 @@ img {
   display: flex;
   flex-direction: column;
   font-weight: 900;
-  letter-spacing: -.02em;
 }
 
 .brand span {
   font-size: 12px;
   color: #b9d9e8;
   font-weight: 600;
-  letter-spacing: .02em;
 }
 
 .nav__links {
@@ -107,7 +104,7 @@ img {
 /* HERO */
 .hero {
   background:
-    radial-gradient(circle at 72% 20%, rgba(36, 183, 216, .24), transparent 35%),
+    radial-gradient(circle at 72% 20%, rgba(36,183,216,.24), transparent 35%),
     linear-gradient(135deg, var(--navy), var(--navy-2) 58%, var(--navy));
   color: white;
   padding: 78px 0 70px;
@@ -145,42 +142,26 @@ h1 {
   font-size: 20px;
   color: #d8eef7;
   max-width: 650px;
-  margin: 0 0 28px;
+  margin: 0 0 24px;
 }
 
 .hero__actions {
   display: flex;
   gap: 14px;
   flex-wrap: wrap;
-  margin: 0 0 24px;
+  margin: 18px 0 20px;
 }
 
-.btn {
-  display: inline-flex;
-  align-items: center;
+.hero__visual {
+  display: flex;
   justify-content: center;
-  min-height: 48px;
-  padding: 0 20px;
-  border-radius: 999px;
-  font-weight: 900;
-  border: 1px solid transparent;
-  transition: transform .2s ease, box-shadow .2s ease, background .2s ease;
+  align-items: center;
 }
 
-.btn:hover {
-  transform: translateY(-2px);
-}
-
-.btn--primary {
-  background: var(--gold);
-  color: #102033;
-  box-shadow: 0 16px 30px rgba(245, 184, 61, .22);
-}
-
-.btn--ghost {
-  border-color: rgba(255, 255, 255, .28);
-  color: white;
-  background: rgba(255, 255, 255, .06);
+.hero__visual img {
+  width: min(500px, 100%);
+  display: block;
+  filter: drop-shadow(0 30px 45px rgba(0,0,0,.28));
 }
 
 .trust {
@@ -191,17 +172,115 @@ h1 {
   font-size: 14px;
 }
 
-/* No image box — just clean mascot */
-.hero__visual {
-  display: flex;
-  justify-content: center;
+/* BUTTONS */
+.btn {
+  display: inline-flex;
   align-items: center;
+  justify-content: center;
+  min-height: 48px;
+  padding: 0 20px;
+  border-radius: 999px;
+  font-weight: 900;
+  border: 1px solid transparent;
+  transition: transform .2s ease, box-shadow .2s ease;
 }
 
-.hero__visual img {
-  width: min(420px, 100%);
-  display: block;
-  filter: drop-shadow(0 30px 45px rgba(0, 0, 0, .28));
+.btn:hover {
+  transform: translateY(-2px);
+}
+
+.btn--primary {
+  background: var(--gold);
+  color: #102033;
+  box-shadow: 0 16px 30px rgba(245,184,61,.22);
+}
+
+.btn--ghost {
+  border-color: rgba(255,255,255,.28);
+  color: white;
+  background: rgba(255,255,255,.06);
+}
+
+/* FORMKIT */
+.hero__form {
+  margin-top: 20px;
+  max-width: 430px;
+}
+
+.formkit-powered-by-convertkit-container,
+.formkit-powered-by,
+.formkit-powered-by-convertkit {
+  display: none !important;
+}
+
+.formkit-form {
+  max-width: 100% !important;
+}
+
+.formkit-fields {
+  display: flex !important;
+  align-items: stretch !important;
+  gap: 0 !important;
+  flex-wrap: nowrap !important;
+}
+
+.formkit-field {
+  flex: 1 1 auto !important;
+  margin: 0 !important;
+}
+
+.formkit-input {
+  width: 100% !important;
+  min-height: 58px !important;
+  padding: 0 16px !important;
+  border-radius: 999px 0 0 999px !important;
+  border: 1px solid #dbe7ef !important;
+  border-right: 0 !important;
+  font-size: 14px !important;
+  color: #122033 !important;
+  background: #ffffff !important;
+}
+
+.formkit-input:focus {
+  outline: none !important;
+  border-color: var(--cyan) !important;
+}
+
+.formkit-submit {
+  min-height: 58px !important;
+  padding: 0 !important;
+  border: 0 !important;
+  border-radius: 0 999px 999px 0 !important;
+  background: var(--gold) !important;
+  color: #102033 !important;
+  cursor: pointer !important;
+  font-weight: 900 !important;
+  margin: 0 !important;
+  overflow: hidden !important;
+  white-space: nowrap !important;
+}
+
+.formkit-submit span {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  min-height: 58px !important;
+  padding: 0 28px !important;
+}
+
+.formkit-alert {
+  width: 100% !important;
+  margin: 0 0 10px !important;
+  padding: 10px 12px !important;
+  border-radius: 12px !important;
+  list-style: none !important;
+}
+
+.form-note,
+.privacy-note {
+  color: #d8eef7;
+  font-size: 13px;
+  margin-top: 10px;
 }
 
 /* SECTIONS */
@@ -232,6 +311,7 @@ h2 {
   margin-right: 0;
 }
 
+/* GRIDS */
 .grid-3,
 .grid-2 {
   display: grid;
@@ -252,14 +332,14 @@ h2 {
   border: 1px solid var(--border);
   border-radius: 22px;
   padding: 24px;
-  box-shadow: 0 18px 45px rgba(8, 32, 52, .08);
+  box-shadow: 0 18px 45px rgba(8,32,52,.08);
   transition: transform .2s ease, box-shadow .2s ease, border-color .2s ease;
 }
 
 .card:hover {
   transform: translateY(-5px);
-  box-shadow: 0 24px 55px rgba(8, 32, 52, .12);
-  border-color: rgba(36, 183, 216, .45);
+  box-shadow: 0 24px 55px rgba(8,32,52,.12);
+  border-color: rgba(36,183,216,.45);
 }
 
 .card h3 {
@@ -272,7 +352,7 @@ h2 {
   color: var(--muted);
 }
 
-/* CHECKLIST DOWNLOAD */
+/* DOWNLOAD / VISUAL */
 .download {
   display: grid;
   grid-template-columns: .9fr 1.1fr;
@@ -290,7 +370,7 @@ h2 {
   width: min(420px, 100%);
   display: block;
   margin: 0 auto;
-  filter: drop-shadow(0 25px 40px rgba(8, 32, 52, .18));
+  filter: drop-shadow(0 25px 40px rgba(8,32,52,.18));
 }
 
 /* PROOF */
@@ -332,11 +412,12 @@ h2 {
 
 .card--featured {
   border: 2px solid var(--cyan);
-  transform: translateY(-8px);
+  transform: scale(1.05);
+  box-shadow: 0 10px 30px rgba(0,0,0,.15);
 }
 
 .card--featured:hover {
-  transform: translateY(-13px);
+  transform: scale(1.05) translateY(-5px);
 }
 
 ul {
@@ -397,173 +478,117 @@ ul {
     width: min(340px, 100%);
   }
 
+  .hero__form {
+    max-width: 100%;
+  }
+
+  .formkit-fields {
+    flex-direction: column !important;
+    gap: 10px !important;
+  }
+
+  .formkit-input,
+  .formkit-submit {
+    border-radius: 999px !important;
+    border: 1px solid #dbe7ef !important;
+    width: 100% !important;
+  }
+
   .card--featured,
   .card--featured:hover {
     transform: none;
   }
 }
-.lead-capture {
-  margin-top: 20px;
-}
+/* =========================
+   FINAL POLISH PATCH
+========================= */
 
-.lead-capture form {
-  display: flex;
-  gap: 10px;
-  flex-wrap: wrap;
-}
-
-.lead-capture input {
-  flex: 1;
-  min-width: 220px;
-  padding: 14px 16px;
-  border-radius: 999px;
-  border: 1px solid var(--border);
-  font-size: 14px;
-}
-
-.lead-capture input:focus {
-  outline: none;
-  border-color: var(--cyan);
-}
-/* KIT / CONVERTKIT FORM */
-.kit-form-wrap {
-  max-width: 560px;
-  margin-top: 18px;
-}
-
-.kit-form-wrap--hero {
-  margin-top: 0;
-  min-width: min(520px, 100%);
-}
-
-.form-kicker {
-  margin: 0 0 8px;
-  color: #f5b83d;
-  font-size: 13px;
-  font-weight: 900;
-  text-transform: uppercase;
-  letter-spacing: .08em;
-}
-
-.hero__actions--form {
-  align-items: center;
-}
-
-.formkit-powered-by-convertkit-container,
-.formkit-powered-by,
-.formkit-powered-by-convertkit {
-  display: none !important;
-}
-
-.formkit-form {
-  max-width: 100% !important;
-}
-
-.formkit-fields {
-  display: flex !important;
-  gap: 10px !important;
-  flex-wrap: wrap !important;
-  align-items: center !important;
-}
-
-.formkit-field {
-  flex: 1 1 240px !important;
-  margin: 0 !important;
+/* make hero form feel premium */
+.hero__form {
+  margin-top: 24px;
+  max-width: 520px;
 }
 
 .formkit-input {
-  width: 100% !important;
-  min-height: 48px !important;
-  padding: 0 16px !important;
-  border-radius: 999px !important;
-  border: 1px solid #dbe7ef !important;
-  font-size: 14px !important;
-  color: #122033 !important;
-  background: #ffffff !important;
+  min-height: 58px !important;
+  font-size: 16px !important;
 }
 
-.formkit-input:focus {
-  outline: none !important;
-  border-color: #24b7d8 !important;
-}
-
-.formkit-submit {
-  min-height: 48px !important;
-  padding: 0 !important;
-  border: 0 !important;
-  border-radius: 999px !important;
-  background: #f5b83d !important;
-  color: #102033 !important;
-  cursor: pointer !important;
-  font-weight: 900 !important;
-  margin: 0 !important;
-  overflow: hidden !important;
-}
-
+.formkit-submit,
 .formkit-submit span {
-  display: flex !important;
-  align-items: center !important;
-  justify-content: center !important;
-  min-height: 48px !important;
-  padding: 0 20px !important;
-  color: #102033 !important;
-  font-weight: 900 !important;
+  min-height: 58px !important;
+  padding: 0 28px !important;
 }
 
-.formkit-alert {
-  width: 100% !important;
-  margin: 0 0 10px !important;
-  padding: 10px 12px !important;
-  border-radius: 12px !important;
-  list-style: none !important;
+/* tighten second checklist image section */
+.download {
+  align-items: center;
 }
 
-.privacy-note {
-  color: #5f6f7f;
-  font-size: 13px;
-  margin-top: 10px;
+.download__visual img {
+  max-height: 520px;
+  width: auto;
+}
+
+/* stronger final CTA */
+.cta {
+  padding: 90px 0;
+}
+
+.cta-sub {
+  color: #d8eef7;
+  max-width: 760px;
+  margin: 18px auto 34px;
+  font-size: 18px;
+}
+
+/* mobile cleanup */
+@media (max-width: 860px) {
+  .cta {
+    padding: 64px 0;
+  }
+
+  .download__visual img {
+    max-height: 420px;
+    width: min(340px, 100%);
+  }
+}
+/* FINAL HERO FORM FIX */
+.form-row {
+  display: flex;
+  align-items: stretch;
+  width: min(520px, 100%);
+  margin-top: 22px;
+}
+
+.form-input {
+  flex: 1;
+  min-height: 58px;
+  padding: 0 18px;
+  border-radius: 999px 0 0 999px;
+  border: 1px solid #dbe7ef;
+  border-right: 0;
+  font-size: 16px;
+  color: #122033;
+}
+
+.form-row .btn {
+  min-height: 58px;
+  border-radius: 0 999px 999px 0;
+  padding: 0 28px;
+  white-space: nowrap;
 }
 
 @media (max-width: 860px) {
-  .kit-form-wrap,
-  .kit-form-wrap--hero {
-    max-width: 100%;
+  .form-row {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .form-input,
+  .form-row .btn {
     width: 100%;
+    border-radius: 999px;
+    border: 1px solid #dbe7ef;
   }
-
-  .formkit-fields {
-    flex-direction: column !important;
-    align-items: stretch !important;
-  }
-
-  .formkit-field,
-  .formkit-submit {
-    width: 100% !important;
-  }
-}
-.formkit-fields {
-  display: flex !important;
-  flex-direction: column !important;
-  gap: 12px;
-}
-
-.formkit-input {
-  width: 100% !important;
-}
-
-.formkit-submit {
-  width: 100% !important;
-}
-.formkit-fields {
-  display: flex !important;
-  gap: 10px;
-  align-items: center;
-}
-
-.formkit-input {
-  flex: 1;
-}
-
-.formkit-submit {
-  white-space: nowrap;
 }
