@@ -41,41 +41,46 @@ HERO
         Find hidden Cisco UC risks before they turn into outages.
       </h1>
 
+      <p class="hero__lead">
+        Get the free CiscoMaster UC Risk Checklist and quickly identify lifecycle,
+        backup, certificate, security, and upgrade readiness risks.
+      </p>
+
       <!-- FORM -->
       <div class="hero__form" id="hero-form">
-
-        <form action="https://app.kit.com/forms/9401526/subscriptions"
-          class="formkit-form"
+        <form
+          action="https://app.kit.com/forms/9401526/subscriptions"
           method="post"
-          data-sv-form="9401526"
-          data-uid="2e1146667b">
+          class="hero-lead-form"
+          target="kitHiddenFrame"
+          onsubmit="setTimeout(function(){ window.location.href='thank-you/'; }, 900);"
+        >
+          <input
+            type="email"
+            name="email_address"
+            placeholder="Enter your email"
+            required
+            class="form-input"
+          />
 
-          <div class="form-row">
-            <input
-              type="email"
-              name="email_address"
-              placeholder="Enter your email"
-              required
-              class="form-input"
-            />
-
-            <button type="submit" class="btn btn--primary">
-              Get Free Checklist
-            </button>
-          </div>
-
+          <button type="submit" class="btn btn--primary">
+            Get Free Checklist
+          </button>
         </form>
+
+        <iframe name="kitHiddenFrame" style="display:none;"></iframe>
 
         <p class="form-note">
           No spam. Built for Cisco UC engineers and decision makers.
         </p>
-
       </div>
 
       <!-- SECONDARY CTA -->
       <div class="hero__actions">
-        <a class="btn btn--ghost"
-           href="mailto:assessments@ciscomaster.com?subject=UC%20Health%20Check%20Request">
+        <a
+          class="btn btn--ghost"
+          href="mailto:assessments@ciscomaster.com?subject=UC%20Health%20Check%20Request"
+        >
           Request Full Assessment
         </a>
       </div>
@@ -88,7 +93,10 @@ HERO
     </div>
 
     <div class="hero__visual">
-      <img src="assets/img/ciscomaster/ciscomaster-hero.png" alt="CiscoMaster">
+      <img
+        src="assets/img/ciscomaster/ciscomaster-hero.png"
+        alt="CiscoMaster UC Health Check"
+      />
     </div>
 
   </div>

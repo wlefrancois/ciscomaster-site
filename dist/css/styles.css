@@ -592,3 +592,41 @@ ul {
     border: 1px solid #dbe7ef;
   }
 }
+.hero-lead-form {
+  display: flex;
+  align-items: stretch;
+  width: min(520px, 100%);
+  margin-top: 22px;
+}
+
+.hero-lead-form .form-input {
+  flex: 1;
+  min-height: 58px;
+  padding: 0 18px;
+  border-radius: 999px 0 0 999px;
+  border: 1px solid #dbe7ef;
+  border-right: 0;
+  font-size: 16px;
+  color: #122033;
+}
+
+.hero-lead-form .btn {
+  min-height: 58px;
+  border-radius: 0 999px 999px 0;
+  padding: 0 28px;
+  white-space: nowrap;
+}
+
+@media (max-width: 860px) {
+  .hero-lead-form {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .hero-lead-form .form-input,
+  .hero-lead-form .btn {
+    width: 100%;
+    border-radius: 999px;
+    border: 1px solid #dbe7ef;
+  }
+}
