@@ -541,3 +541,29 @@ ul {
     width: 100% !important;
   }
 }
+.formkit-fields {
+  display: flex !important;
+  flex-direction: column !important;
+  gap: 12px;
+}
+
+.formkit-input {
+  width: 100% !important;
+}
+
+.formkit-submit {
+  width: 100% !important;
+}
+.formkit-fields {
+  display: flex !important;
+  gap: 10px;
+  align-items: center;
+}
+
+.formkit-input {
+  flex: 1;
+}
+
+.formkit-submit {
+  white-space: nowrap;
+}
