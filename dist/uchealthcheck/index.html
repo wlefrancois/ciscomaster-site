@@ -29,6 +29,7 @@
 
 <section class="hero">
   <div class="container hero__grid">
+
     <div class="hero__content">
       <p class="eyebrow">Free UC Risk Checklist</p>
 
@@ -38,39 +39,13 @@
         Unsupported versions, weak recovery plans, certificate issues, and upgrade blockers often stay invisible until the worst possible moment.
       </p>
 
-      <div class="kit-form-wrap kit-form-wrap--hero">
-        <p class="form-kicker">Download the free checklist</p>
+      <a class="hero__download" href="#checklist">
+        Download the free checklist →
+      </a>
 
-        <form action="https://app.kit.com/forms/9401526/subscriptions"
-          class="seva-form formkit-form"
-          method="post"
-          data-sv-form="9401526"
-          data-uid="2e1146667b"
-          data-format="inline"
-          data-version="5"
-          min-width="400 500 600 700 800">
-
-          <div data-style="clean">
-            <ul class="formkit-alert formkit-alert-error" data-element="errors" data-group="alert"></ul>
-
-            <div data-element="fields" data-stacked="false" class="seva-fields formkit-fields">
-              <div class="formkit-field">
-                <input class="formkit-input"
-                  name="email_address"
-                  aria-label="Email Address"
-                  placeholder="Enter your email"
-                  required
-                  type="email">
-              </div>
-
-              <button data-element="submit" class="formkit-submit">
-                <div class="formkit-spinner"><div></div><div></div><div></div></div>
-                <span>Get Checklist</span>
-              </button>
-            </div>
-          </div>
-        </form>
-      </div>
+      <p class="form-note">
+        Enter your email below and we’ll send you to the checklist download page.
+      </p>
 
       <div class="trust">
         <span>✓ Cisco UC focused</span>
@@ -80,14 +55,19 @@
     </div>
 
     <div class="hero__visual">
-      <img src="../assets/img/ciscomaster/ciscomaster-laptop.png" alt="UC Health Check checklist preview">
+      <img
+        src="../assets/img/ciscomaster/ciscomaster-laptop.png"
+        alt="UC Health Check checklist preview"
+      />
     </div>
+
   </div>
 </section>
 
 <section id="risks" class="section section--white">
   <div class="container center">
     <h2>Most UC risks are hidden until change exposes them.</h2>
+
     <p class="lead">
       A UC Health Check helps uncover the issues that can derail upgrades, outages, audits, and recovery events.
     </p>
@@ -113,8 +93,10 @@
 
 <section id="checklist" class="section">
   <div class="container download">
+
     <div>
       <p class="eyebrow">What You Get</p>
+
       <h2>A practical checklist for Cisco UC environments.</h2>
 
       <p class="lead lead--left">
@@ -129,44 +111,35 @@
       </ul>
     </div>
 
-    <div class="card">
+    <div class="card checklist-card">
       <h3>Get the checklist</h3>
       <p>Enter your email and receive the UC Health Check checklist.</p>
 
-      <div class="kit-form-wrap">
-        <form action="https://app.kit.com/forms/9401526/subscriptions"
-          class="seva-form formkit-form"
-          method="post"
-          data-sv-form="9401526"
-          data-uid="2e1146667b"
-          data-format="inline"
-          data-version="5"
-          min-width="400 500 600 700 800">
+      <form
+        action="https://app.kit.com/forms/9401526/subscriptions"
+        method="post"
+        class="hero-lead-form"
+        target="kitHiddenFrame"
+        onsubmit="setTimeout(function(){ window.location.href='/thank-you/'; }, 900);"
+      >
+        <input
+          type="email"
+          name="email_address"
+          placeholder="Enter your email"
+          required
+          class="form-input"
+        />
 
-          <div data-style="clean">
-            <ul class="formkit-alert formkit-alert-error" data-element="errors" data-group="alert"></ul>
+        <button type="submit" class="btn btn--primary">
+          Download Checklist
+        </button>
+      </form>
 
-            <div data-element="fields" data-stacked="true" class="seva-fields formkit-fields">
-              <div class="formkit-field">
-                <input class="formkit-input"
-                  name="email_address"
-                  aria-label="Email Address"
-                  placeholder="Enter your email"
-                  required
-                  type="email">
-              </div>
-
-              <button data-element="submit" class="formkit-submit">
-                <div class="formkit-spinner"><div></div><div></div><div></div></div>
-                <span>Download Checklist</span>
-              </button>
-            </div>
-          </div>
-        </form>
-      </div>
+      <iframe name="kitHiddenFrame" style="display:none;"></iframe>
 
       <p class="privacy-note">No spam. Just practical UC risk guidance.</p>
     </div>
+
   </div>
 </section>
 
@@ -182,6 +155,7 @@
 <section id="assessment" class="section">
   <div class="container center">
     <p class="eyebrow">Want us to run it for you?</p>
+
     <h2>Request a CiscoMaster UC Health Check.</h2>
 
     <p class="lead">
@@ -221,6 +195,7 @@
     </div>
 
     <br>
+
     <a class="btn btn--primary" href="mailto:assessments@ciscomaster.com">
       Request Assessment
     </a>
@@ -231,6 +206,7 @@
   <div class="container center">
     <h2>Don’t wait for an outage to discover your UC risks.</h2>
     <p>Get the checklist or request a full CiscoMaster UC Health Check.</p>
+
     <a class="btn btn--primary" href="mailto:assessments@ciscomaster.com">
       assessments@ciscomaster.com
     </a>
@@ -245,8 +221,6 @@
     <div><a href="mailto:assessments@ciscomaster.com">assessments@ciscomaster.com</a></div>
   </div>
 </footer>
-
-<script src="https://f.convertkit.com/ckjs/ck.5.js"></script>
 
 </body>
 </html>

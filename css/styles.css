@@ -630,3 +630,19 @@ ul {
     border: 1px solid #dbe7ef;
   }
 }
+.hero__download {
+  display: inline-block;
+  margin: 8px 0 20px;
+  color: #ffffff;
+  font-weight: 800;
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
+
+.hero__download:hover {
+  color: var(--gold);
+}
+
+.checklist-card {
+  align-self: center;
+}
