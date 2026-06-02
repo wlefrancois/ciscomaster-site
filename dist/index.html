@@ -1,53 +1,126 @@
+```html
+<!-- =============================================================================
+     PAGE: CiscoMaster Homepage
+     SITE: CiscoMaster
+     VERSION: v1.2 OPERATIONAL INTELLIGENCE PLATFORM
+     PURPOSE:
+       Public landing page for CiscoMaster UC Operational Intelligence.
+
+       This version positions CiscoMaster as an engineer-built Cisco UC
+       operational intelligence platform focused on lifecycle exposure,
+       upgrade readiness, certificate visibility, backup validation,
+       and recurring operational risk analysis.
+
+     PRIMARY USER FLOW:
+       Visitor lands on homepage
+       -> understands hidden Cisco UC operational risk
+       -> sees operational intelligence workflows
+       -> views executive report preview
+       -> downloads free checklist OR requests assessment
+
+     IMPORTANT:
+       - Full standalone static HTML page.
+       - Includes <!doctype>, <html>, <head>, and <body>.
+       - Replace existing index.html
+       - Uses shared stylesheet: css/styles.css
+
+     REQUIRED IMAGE FILES:
+       /assets/img/ciscomaster/ciscomaster-hero.png
+       /assets/img/ciscomaster/executive-risk-summary-v1.png
+       /assets/img/ciscomaster/ciscomaster-checklist-preview.png
+============================================================================= -->
+
 <!doctype html>
 <html lang="en">
+
 <head>
+
   <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>CiscoMaster UC Health Check</title>
-  <meta name="description" content="Identify hidden Cisco UC risks before outages, failed upgrades, or recovery issues." />
-  <link rel="stylesheet" href="css/styles.css" />
+
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1"
+  />
+
+  <title>
+    CiscoMaster UC Operational Intelligence Platform
+  </title>
+
+  <meta
+    name="description"
+    content="Identify hidden Cisco UC lifecycle, certificate, backup, upgrade, and operational risks before outages or failed maintenance windows."
+  />
+
+  <link
+    rel="stylesheet"
+    href="css/styles.css"
+  />
+
 </head>
 
 <body>
 
-<!-- =========================
-NAV
-========================= -->
+<!-- =============================================================================
+     SECTION 01: NAVIGATION
+     PURPOSE:
+       Establish CiscoMaster brand identity and provide fast access to
+       report previews, packages, checklist resources, and contact.
+============================================================================= -->
+
 <header class="nav">
+
   <div class="container nav__inner">
+
     <div class="brand">
       CiscoMaster™
-      <span>UC Health Check by WDC, LLC</span>
+      <span>UC Operational Intelligence by WDC, LLC</span>
     </div>
 
     <nav class="nav__links">
-      <a href="#checklist">Checklist</a>
+      <a href="#report-preview">Report Preview</a>
       <a href="#packages">Packages</a>
+      <a href="#checklist">Checklist</a>
       <a href="mailto:assessments@ciscomaster.com">Contact</a>
     </nav>
+
   </div>
+
 </header>
 
-<!-- =========================
-HERO
-========================= -->
+<!-- =============================================================================
+     SECTION 02: HERO
+     PURPOSE:
+       Immediately explain the CiscoMaster operational intelligence value
+       proposition and establish lifecycle, certificate, backup, and
+       upgrade readiness urgency.
+============================================================================= -->
+
 <section class="hero">
+
   <div class="container hero__grid">
 
+    <!-- LEFT -->
     <div class="hero__content">
-      <p class="eyebrow">CISCOMASTER™ UC HEALTH CHECK</p>
+
+      <p class="eyebrow">
+        CISCOMASTER™ UC OPERATIONAL INTELLIGENCE
+      </p>
 
       <h1>
-        Find hidden Cisco UC risks before they turn into outages.
+        Find hidden Cisco UC risks before they become outages or failed upgrades.
       </h1>
 
       <p class="hero__lead">
-        Get the free CiscoMaster UC Risk Checklist and quickly identify lifecycle,
-        backup, certificate, security, and upgrade readiness risks.
+        Engineer-built operational intelligence for Cisco UC environments covering
+        lifecycle exposure, certificate risk, backup readiness, upgrade blockers,
+        and infrastructure health.
       </p>
 
-      <!-- FORM -->
-      <div class="hero__form" id="hero-form">
+      <div
+        class="hero__form"
+        id="hero-form"
+      >
+
         <form
           action="https://app.kit.com/forms/9401526/subscriptions"
           method="post"
@@ -55,213 +128,621 @@ HERO
           target="kitHiddenFrame"
           onsubmit="setTimeout(function(){ window.location.href='thank-you/'; }, 900);"
         >
+
           <input
             type="email"
             name="email_address"
-            placeholder="Enter your email"
+            placeholder="Enter your corporate email"
             required
             class="form-input"
           />
 
-          <button type="submit" class="btn btn--primary">
-            Get Free Checklist
+          <button
+            type="submit"
+            class="btn btn--primary"
+          >
+            Get Free UC Risk Checklist
           </button>
+
         </form>
 
-        <iframe name="kitHiddenFrame" style="display:none;"></iframe>
+        <iframe
+          name="kitHiddenFrame"
+          style="display:none;"
+        ></iframe>
 
-        <p class="form-note">
-          No spam. Built for Cisco UC engineers and decision makers.
-        </p>
-      </div>
-
-      <!-- SECONDARY CTA -->
-      <div class="hero__actions">
-        <a
-          class="btn btn--ghost"
-          href="mailto:assessments@ciscomaster.com?subject=UC%20Health%20Check%20Request"
-        >
-          Request Full Assessment
-        </a>
       </div>
 
       <div class="trust">
-        <span>✓ Used by UC engineers</span>
-        <span>✓ Find risks in minutes</span>
-        <span>✓ Executive-ready output</span>
+        <span>✓ CUCM</span>
+        <span>✓ Unity Connection</span>
+        <span>✓ IM&amp;P</span>
+        <span>✓ UCCX</span>
+        <span>✓ PCD</span>
       </div>
+
+      <div class="hero-alert">
+
+        <strong>CUCM 14 End of Support:</strong>
+
+        April 2027 is approaching. Validate upgrade readiness,
+        certificate exposure, backups, and operational readiness
+        before maintenance windows begin.
+
+      </div>
+
     </div>
 
-    <div class="hero__visual">
+    <!-- RIGHT -->
+    <div class="hero__visual hero__visual--platform">
+
       <img
         src="assets/img/ciscomaster/ciscomaster-hero.png"
-        alt="CiscoMaster UC Health Check"
+        alt="CiscoMaster Operational Intelligence"
       />
+
+      <div class="risk-pill risk-pill--one">
+        <strong>7</strong>
+        Expiring Certificates
+      </div>
+
+      <div class="risk-pill risk-pill--two">
+        <strong>147 Days</strong>
+        Since Restore Validation
+      </div>
+
+      <div class="risk-pill risk-pill--three">
+        <strong>CUCM 14</strong>
+        Upgrade Readiness Review
+      </div>
+
     </div>
 
   </div>
+
 </section>
 
-<!-- =========================
-PROBLEM
-========================= -->
+<!-- =============================================================================
+     SECTION 03: WHAT WE FIND
+     PURPOSE:
+       Explain the major hidden operational risk categories CiscoMaster
+       identifies inside Cisco collaboration environments.
+============================================================================= -->
+
 <section class="section section--white">
+
   <div class="container center">
-    <h2>Most environments hide risks in plain sight.</h2>
+
+    <p class="eyebrow">
+      WHAT CISCOMASTER UNCOVERS
+    </p>
+
+    <h2>
+      Most UC environments hide operational risk in plain sight.
+    </h2>
 
     <p class="lead">
-      Unsupported versions, untested restores, expiring certificates, and upgrade blockers often stay invisible until an outage or maintenance window exposes them.
+      Unsupported versions, expired certificates, untested restores,
+      and infrastructure drift often remain invisible until outages
+      or failed maintenance windows expose them.
     </p>
 
     <div class="grid-3">
+
       <div class="card">
-        <h3>Lifecycle Risk</h3>
-        <p>Unsupported or inconsistent UC versions before they become upgrade blockers.</p>
+
+        <h3>Lifecycle Exposure</h3>
+
+        <p>
+          Identify unsupported Cisco UC versions, mixed cluster states,
+          aging dependencies, and upgrade readiness concerns.
+        </p>
+
       </div>
 
       <div class="card">
-        <h3>Backup & DR Risk</h3>
-        <p>Backups exist, but restores are rarely tested or validated.</p>
+
+        <h3>Backup &amp; DR Validation</h3>
+
+        <p>
+          Verify backup integrity, restore readiness,
+          and disaster recovery workflows before operational failure occurs.
+        </p>
+
       </div>
 
       <div class="card">
-        <h3>Security Exposure</h3>
-        <p>Certificates, access paths, vulnerabilities, and trust relationships.</p>
+
+        <h3>Certificate &amp; Security Risk</h3>
+
+        <p>
+          Surface expiring certificates, trust exposure,
+          and platform authentication risks before services fail.
+        </p>
+
       </div>
+
     </div>
+
   </div>
+
 </section>
-<section class="section">
+
+<!-- =============================================================================
+     SECTION 04: PLATFORM OUTPUTS
+     PURPOSE:
+       Explain the deliverables and operational intelligence outputs generated
+       by CiscoMaster assessments.
+============================================================================= -->
+
+<section
+  class="section section--dark"
+  id="deliverables"
+>
+
+  <div class="container center">
+
+    <p class="eyebrow">
+      PLATFORM OUTPUTS
+    </p>
+
+    <h2>
+      Executive-ready intelligence backed by engineer-level detail.
+    </h2>
+
+    <p class="lead lead--light">
+      CiscoMaster transforms complex UC platform data into executive-ready findings,
+      operational risk scoring, lifecycle visibility, and remediation guidance.
+    </p>
+
+    <div class="grid-3 deliverables-grid">
+
+      <div class="card card--dark">
+
+        <h3>Executive Findings Report</h3>
+
+        <p>
+          Business-readable operational findings for leadership visibility,
+          remediation planning, budgeting discussions, and upgrade strategy reviews.
+        </p>
+
+      </div>
+
+      <div class="card card--dark">
+
+        <h3>Operational Risk Scoring</h3>
+
+        <p>
+          Clear operational risk scoring across lifecycle exposure,
+          certificates, backups, upgrade readiness, and infrastructure health.
+        </p>
+
+      </div>
+
+      <div class="card card--dark">
+
+        <h3>Technical Workbook</h3>
+
+        <p>
+          Engineer-ready Excel outputs with platform findings,
+          validation results, remediation detail, and operational evidence.
+        </p>
+
+      </div>
+
+      <div class="card card--dark">
+
+        <h3>Upgrade Readiness Review</h3>
+
+        <p>
+          Validate supported paths, dependencies, certificates,
+          COP requirements, and operational blockers before upgrades begin.
+        </p>
+
+      </div>
+
+      <div class="card card--dark">
+
+        <h3>Certificate Analysis</h3>
+
+        <p>
+          Surface expiring certificates, trust exposure,
+          and authentication risks before services are disrupted.
+        </p>
+
+      </div>
+
+      <div class="card card--dark">
+
+        <h3>30/60/90 Remediation Roadmap</h3>
+
+        <p>
+          Prioritized remediation planning to reduce operational exposure
+          and improve platform resilience over time.
+        </p>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+<!-- =============================================================================
+     SECTION 05: EXECUTIVE REPORT PREVIEW
+     PURPOSE:
+       Show a believable example of CiscoMaster operational intelligence outputs.
+       This section bridges the gap between marketing claims and visible proof.
+============================================================================= -->
+
+<section
+  class="section section--white report-preview"
+  id="report-preview"
+>
+
+  <div class="container report-preview__grid">
+
+    <!-- LEFT -->
+    <div class="report-preview__content">
+
+      <p class="eyebrow">
+        EXECUTIVE REPORT PREVIEW
+      </p>
+
+      <h2>
+        See how CiscoMaster transforms operational data into executive-ready intelligence.
+      </h2>
+
+      <p class="lead lead--left">
+        CiscoMaster assessments combine engineer-level platform analysis with
+        executive-readable operational findings, lifecycle exposure visibility,
+        remediation guidance, and upgrade readiness intelligence.
+      </p>
+
+      <ul class="feature-list">
+
+        <li>Operational risk scoring</li>
+        <li>Lifecycle exposure analysis</li>
+        <li>Certificate visibility</li>
+        <li>Upgrade readiness findings</li>
+        <li>Backup validation review</li>
+        <li>Executive remediation roadmap</li>
+
+      </ul>
+
+    </div>
+
+    <!-- RIGHT -->
+    <div class="report-preview__visual">
+
+      <img
+        src="assets/img/ciscomaster/executive-risk-summary-v1.png"
+        alt="CiscoMaster Executive Risk Summary"
+      />
+
+    </div>
+
+  </div>
+
+</section>
+
+<!-- =============================================================================
+     SECTION 06: FREE CHECKLIST
+     PURPOSE:
+       Capture email addresses from visitors who are not yet ready to
+       request a full assessment.
+============================================================================= -->
+
+<section
+  class="section"
+  id="checklist"
+>
+
   <div class="container download">
 
     <div>
-      <p class="eyebrow">Free Checklist</p>
 
-      <h2>Download the CiscoMaster UC Risk Checklist.</h2>
+      <p class="eyebrow">
+        FREE CHECKLIST
+      </p>
+
+      <h2>
+        Download the CiscoMaster UC Risk Checklist.
+      </h2>
 
       <p class="lead lead--left">
-        Use the checklist to quickly identify upgrade blockers,
-        certificate risks, backup concerns, lifecycle exposure,
-        and hidden UC operational gaps.
+        Use the checklist to identify hidden lifecycle exposure,
+        certificate risks, backup concerns,
+        upgrade blockers, and operational gaps.
       </p>
 
       <a
         class="btn btn--primary"
-        href="#hero-form">
+        href="#hero-form"
+      >
         Get Free Checklist
       </a>
+
     </div>
 
     <div class="download__visual">
+
       <img
-        src="assets/img/ciscomaster/ciscomaster-laptop.png"
-        alt="CiscoMaster checklist preview">
+        src="assets/img/ciscomaster/ciscomaster-checklist-preview.png"
+        alt="CiscoMaster Checklist Preview"
+      />
+
     </div>
 
   </div>
+
 </section>
 
-<!-- =========================
-PROOF
-========================= -->
+<!-- =============================================================================
+     SECTION 07: PROOF / RISK STATEMENT
+     PURPOSE:
+       Reinforce that hidden operational risk is extremely common inside
+       Cisco collaboration environments.
+============================================================================= -->
+
 <section class="section">
+
   <div class="container">
+
     <div class="proof center">
+
       <h2>
-        Most organizations uncover <strong>10–30 hidden risks</strong>
+        Most organizations uncover
+        <strong>10–30 hidden operational risks</strong>
         during a focused UC review.
       </h2>
 
       <p>
-        The goal is simple: find the problems before users, executives, or outages do.
+        The goal is simple:
+        identify operational problems before outages,
+        failed upgrades, leadership escalations,
+        or emergency maintenance windows occur.
       </p>
+
     </div>
+
   </div>
+
 </section>
 
-<!-- =========================
-PACKAGES
-========================= -->
-<section id="packages" class="section section--white">
+<!-- =============================================================================
+     SECTION 08: ASSESSMENT PACKAGES
+     PURPOSE:
+       Present CiscoMaster offerings as productized operational intelligence
+       packages rather than hourly consulting engagements.
+============================================================================= -->
+
+<section
+  id="packages"
+  class="section section--white"
+>
+
   <div class="container center">
 
-    <p class="eyebrow">ASSESSMENT PACKAGES</p>
+    <p class="eyebrow">
+      PLATFORM TIERS
+    </p>
 
-    <h2>CiscoMaster UC Health Check</h2>
+    <h2>
+      Choose your level of operational visibility.
+    </h2>
 
     <p class="lead">
-      Start with a quick scan or bring us in for a complete assessment and executive-ready roadmap.
+      Start with a focused operational baseline
+      or move into a complete enterprise-grade UC assessment.
     </p>
 
     <div class="grid-3 pricing-grid">
 
       <div class="card card--price">
-        <h3>Quick Scan</h3>
-        <div class="price">$2,500</div>
+
+        <p class="package-label">
+          Best for quick validation
+        </p>
+
+        <h3>
+          UC Operational Baseline™
+        </h3>
+
+        <div class="price">
+          $2,500
+        </div>
+
         <ul>
-          <li>Checklist review</li>
-          <li>60-minute working session</li>
-          <li>High-level risk summary</li>
+          <li>Automated platform health review</li>
+          <li>Executive operational findings summary</li>
+          <li>Lifecycle and risk analysis</li>
+          <li>Recommended remediation priorities</li>
         </ul>
+
       </div>
 
       <div class="card card--price card--featured">
-        <h3>Standard Assessment</h3>
-        <div class="price">$7,500</div>
+
+        <p class="package-label">
+          Best for most UC environments
+        </p>
+
+        <h3>
+          Operational Risk Intelligence Suite™
+        </h3>
+
+        <div class="price">
+          $7,500
+        </div>
+
         <ul>
-          <li>Full checklist completion</li>
-          <li>Risk scoring</li>
+          <li>Automated UC platform analysis</li>
+          <li>Operational risk scoring</li>
           <li>Executive findings report</li>
-          <li>Readout session</li>
+          <li>Technical workbook outputs</li>
+          <li>Strategic remediation review</li>
         </ul>
+
       </div>
 
       <div class="card card--price">
-        <h3>Enterprise Deep Dive</h3>
-        <div class="price">$15K+</div>
+
+        <p class="package-label">
+          Best for complex enterprise UC
+        </p>
+
+        <h3>
+          Enterprise UC Resilience Audit™
+        </h3>
+
+        <div class="price">
+          $15K+
+        </div>
+
         <ul>
           <li>Upgrade readiness validation</li>
-          <li>DR / backup review</li>
-          <li>Security exposure mapping</li>
-          <li>30/60/90 roadmap</li>
+          <li>Backup and DR review</li>
+          <li>Security and certificate analysis</li>
+          <li>Multi-platform operational assessment</li>
+          <li>Custom 30/60/90 roadmap</li>
         </ul>
+
       </div>
 
     </div>
 
   </div>
+
 </section>
 
-<!-- =========================
-FINAL CTA
-========================= -->
-<section class="cta">
+<!-- =============================================================================
+     SECTION 09: CONTINUOUS VISIBILITY
+     PURPOSE:
+       Introduce the long-term recurring operational intelligence direction
+       for CiscoMaster.
+============================================================================= -->
+
+<section class="section section--platform">
+
   <div class="container center">
-    <h2>Ready to identify your hidden UC risks?</h2>
+
+    <p class="eyebrow">
+      CONTINUOUS VISIBILITY
+    </p>
+
+    <h2>
+      Continuous operational intelligence for Cisco collaboration environments.
+    </h2>
+
+    <p class="lead">
+      CiscoMaster is evolving from one-time assessments into recurring lifecycle,
+      certificate, backup, vulnerability, and upgrade readiness monitoring.
+    </p>
+
+    <div class="grid-3">
+
+      <div class="card">
+
+        <h3>Lifecycle Monitoring</h3>
+
+        <p>
+          Track support timelines, version exposure,
+          and upgrade readiness across Cisco UC environments.
+        </p>
+
+      </div>
+
+      <div class="card">
+
+        <h3>Certificate Visibility</h3>
+
+        <p>
+          Monitor certificate expiration and trust exposure
+          before operational disruption occurs.
+        </p>
+
+      </div>
+
+      <div class="card">
+
+        <h3>Quarterly Risk Reviews</h3>
+
+        <p>
+          Executive-ready recurring reporting for ongoing operational visibility
+          and remediation tracking.
+        </p>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+<!-- =============================================================================
+     SECTION 10: FINAL CTA
+     PURPOSE:
+       Give the visitor one clear final action:
+       request a Cisco UC assessment.
+============================================================================= -->
+
+<section class="cta">
+
+  <div class="container center">
+
+    <h2>
+      Ready to identify your hidden Cisco UC risks?
+    </h2>
 
     <p class="cta-sub">
-  Executive-ready UC assessments, lifecycle reviews, upgrade readiness validation,
-  and operational risk analysis.
-</p>
+      Executive-ready Cisco UC operational assessments,
+      lifecycle reviews, upgrade readiness validation,
+      and operational intelligence for enterprise collaboration environments.
+    </p>
 
-    <a class="btn btn--primary"
-       href="mailto:assessments@ciscomaster.com">
-      assessments@ciscomaster.com
+    <a
+      class="btn btn--primary"
+      href="mailto:assessments@ciscomaster.com?subject=UC%20Assessment"
+    >
+      Request Assessment
     </a>
+
   </div>
+
 </section>
 
-<!-- =========================
-FOOTER
-========================= -->
+<!-- =============================================================================
+     SECTION 11: FOOTER
+     PURPOSE:
+       Close the page with ownership, contact information,
+       and brand identity reinforcement.
+============================================================================= -->
+
 <footer class="footer">
+
   <div class="container footer__inner">
-    <div>© 2026 CiscoMaster™. A solution by WDC, LLC.</div>
-    <div><a href="mailto:assessments@ciscomaster.com">assessments@ciscomaster.com</a></div>
+
+    <div>
+      © 2026 CiscoMaster™ — UC Operational Intelligence by WDC, LLC.
+    </div>
+
+    <div>
+
+      <a href="mailto:assessments@ciscomaster.com">
+        assessments@ciscomaster.com
+      </a>
+
+    </div>
+
   </div>
+
 </footer>
 
 <script src="https://f.convertkit.com/ckjs/ck.5.js"></script>
 
 </body>
 </html>
+```
