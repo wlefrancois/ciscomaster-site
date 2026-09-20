@@ -1207,3 +1207,11 @@ body{background:var(--surface)}
 .v3-ecosystem__foundation{grid-area:foundation;background:#e4e1d7;min-height:140px!important}.v3-ecosystem__foundation>div{justify-content:space-between}.v3-ecosystem__foundation span{font-size:14px;border-bottom:0}
 .v3-ecosystem__footer{display:grid;grid-template-columns:240px 1fr;gap:40px;padding:24px 0;border-bottom:1px solid #b9c0c0}.v3-ecosystem__footer strong{font-size:13px}.v3-ecosystem__footer p{margin:0;max-width:760px;color:#68747a;font-size:12px;line-height:1.65}
 @media(max-width:900px){.v3-ecosystem{grid-template-columns:1fr;grid-template-areas:"core" "services" "edge" "apps" "foundation"}.v3-ecosystem__footer{grid-template-columns:1fr;gap:8px}.v3-ecosystem__foundation>div{justify-content:flex-start}}
+
+/* CISCOMASTER V3.6 ENGINEERING METHOD JOURNEY */
+.v3-method__journey{border-top:1px solid #8f9999}
+.v3-method__step{display:grid;grid-template-columns:90px 1fr;gap:30px;padding:24px 0;border-bottom:1px solid #b8bdbb;position:relative}
+.v3-method__step b{font-size:11px;color:#8b6b31;letter-spacing:.12em;padding-top:4px}.v3-method__step>div{display:grid;grid-template-columns:240px 1fr;gap:40px;align-items:baseline}.v3-method__step strong{font-size:24px;font-weight:500;letter-spacing:-.025em}.v3-method__step span{font-size:13px;line-height:1.6;color:#626e73;max-width:700px}
+.v3-method__step--human{background:#0d1b25;color:#fff;margin:0 -24px;padding-left:24px;padding-right:24px;border-color:#0d1b25}.v3-method__step--human b{color:#d9ad55}.v3-method__step--human span{color:#a9bac4}
+.v3-method__outcome{display:grid;grid-template-columns:auto 1fr auto 1fr auto 1fr auto;gap:18px;align-items:center;margin-top:34px;font-size:10px;letter-spacing:.11em;text-transform:uppercase;color:#6a7478}.v3-method__outcome i{height:1px;background:#a9b0af}.v3-method__outcome strong{font-size:10px;color:#26343d}
+@media(max-width:900px){.v3-method__step{grid-template-columns:50px 1fr}.v3-method__step>div{grid-template-columns:1fr;gap:6px}.v3-method__outcome{display:none}}
