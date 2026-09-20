@@ -1196,3 +1196,14 @@ body{background:var(--surface)}
 .v3-nav__action{color:#fff!important}
 .v3-footer a{color:#c4d0d6!important}
 @media(max-width:900px){.v3-engage__rows a{justify-self:start}}
+
+/* CISCOMASTER V3.5 CONNECTED UC ECOSYSTEM */
+.v3-ecosystem{display:grid;grid-template-columns:1.05fr 1.45fr;grid-template-areas:"core services" "edge apps" "foundation foundation";border-top:1px solid #9ea8aa;border-left:1px solid #9ea8aa}
+.v3-ecosystem>div{border-right:1px solid #9ea8aa;border-bottom:1px solid #9ea8aa;padding:28px 30px;min-height:170px}
+.v3-ecosystem small{display:block;font-size:9px;font-weight:800;letter-spacing:.16em;color:#7a8589;margin-bottom:26px}
+.v3-ecosystem__core{grid-area:core;background:#0d1b25;color:#fff;display:flex;flex-direction:column;justify-content:flex-end}.v3-ecosystem__core small{color:#a9bac4;margin-bottom:auto}.v3-ecosystem__core strong{font-size:54px;font-weight:500;letter-spacing:-.05em}.v3-ecosystem__core span{font-size:12px;color:#9eafb9;margin-top:8px}
+.v3-ecosystem__group:nth-of-type(2){grid-area:services}.v3-ecosystem__group:nth-of-type(3){grid-area:edge}.v3-ecosystem__group:nth-of-type(4){grid-area:apps}
+.v3-ecosystem__group>div,.v3-ecosystem__foundation>div{display:flex;flex-wrap:wrap;gap:9px 22px}.v3-ecosystem__group span,.v3-ecosystem__foundation span{font-size:16px;padding:7px 0;border-bottom:1px solid #c4caca;color:#26343d}
+.v3-ecosystem__foundation{grid-area:foundation;background:#e4e1d7;min-height:140px!important}.v3-ecosystem__foundation>div{justify-content:space-between}.v3-ecosystem__foundation span{font-size:14px;border-bottom:0}
+.v3-ecosystem__footer{display:grid;grid-template-columns:240px 1fr;gap:40px;padding:24px 0;border-bottom:1px solid #b9c0c0}.v3-ecosystem__footer strong{font-size:13px}.v3-ecosystem__footer p{margin:0;max-width:760px;color:#68747a;font-size:12px;line-height:1.65}
+@media(max-width:900px){.v3-ecosystem{grid-template-columns:1fr;grid-template-areas:"core" "services" "edge" "apps" "foundation"}.v3-ecosystem__footer{grid-template-columns:1fr;gap:8px}.v3-ecosystem__foundation>div{justify-content:flex-start}}
