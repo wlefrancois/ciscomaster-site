@@ -1180,3 +1180,19 @@ body{background:var(--surface)}
 
 /* CISCOMASTER V3.3 EXPANDED UC ECOSYSTEM */
 .v3-system--scope{background:#e5dfcf;border-color:#a79a7d}.v3-system--scope:before{background:#8b6b31}.v3-system--scope strong{font-size:24px}
+
+/* CISCOMASTER V3.4 LINK / CTA CONTRAST FIX */
+.v3 .v3-button--light{background:#f4f1e9!important;color:#111820!important;border:1px solid #f4f1e9}
+.v3 .v3-button--dark{background:#081119!important;color:#fff!important;border:1px solid #081119}
+.v3 .v3-textlink{color:#d7e0e5!important}
+.v3 .v3-textlink b{color:#d9ad55!important}
+.v3 .v3-textlink--dark{color:#111820!important}
+.v3-engage__rows a,.v3-focused a{color:#173f56!important;font-weight:700;text-decoration:none;border-bottom:1px solid #7894a3;padding-bottom:2px;justify-self:end}
+.v3-focused a{justify-self:start}
+.v3-continuity__items a{color:#fff!important}
+.v3-continuity__items a b{color:#fff!important}.v3-continuity__items a span{color:#b6c6cf!important}.v3-continuity__items a em{color:#d9ad55!important}
+.v3-final .v3-button--dark{background:#081119!important;color:#fff!important}
+.v3-final .v3-textlink--dark{color:#111820!important;border-bottom:1px solid rgba(17,24,32,.45);padding-bottom:3px}
+.v3-nav__action{color:#fff!important}
+.v3-footer a{color:#c4d0d6!important}
+@media(max-width:900px){.v3-engage__rows a{justify-self:start}}
