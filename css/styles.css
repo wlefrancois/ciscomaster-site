@@ -1104,3 +1104,7 @@ ul {
 .team-assurance__points strong{display:block;margin-bottom:4px;color:var(--text)}
 .team-assurance__points span{display:block;color:var(--muted);font-size:14px}
 @media(max-width:860px){.team-assurance__grid{grid-template-columns:1fr;gap:26px}}
+
+.team-note{padding:18px 0;background:#eef7fb;border-bottom:1px solid var(--border);color:var(--text)}
+.team-note .container{font-size:15px;line-height:1.55}.team-note strong{color:var(--blue)}
+.partner-team-section{background:#eef7fb}
