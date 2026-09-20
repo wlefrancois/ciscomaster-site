@@ -1166,3 +1166,14 @@ body{background:var(--surface)}
 .v3-principles{padding:104px 0;background:#fff}.v3-principles__grid{display:grid;grid-template-columns:repeat(4,1fr);border-top:1px solid #b9c0c0}.v3-principles__grid>div{padding:24px 26px 12px 0;border-right:1px solid #d1d5d5;margin-right:26px}.v3-principles__grid>div:last-child{border-right:0;margin-right:0}.v3-principles__grid b{display:block;font-size:17px;margin-bottom:14px}.v3-principles__grid span{font-size:12px;line-height:1.65;color:#68747a}
 .v3-proof__primary img,.v3-proof__secondary img{background:#fff}
 @media(max-width:900px){.v3-hero__meta{flex-wrap:wrap;gap:10px}.v3-hero__meta span{border:0;padding-right:0}.v3-context__grid{grid-template-columns:1fr;gap:38px}.v3-context__list p{grid-template-columns:1fr;gap:8px}.v3-principles__grid{grid-template-columns:1fr 1fr}.v3-principles__grid>div{border-right:0;border-bottom:1px solid #d1d5d5;margin:0;padding:22px 16px 22px 0}}
+
+/* CISCOMASTER V3.2 TECHNICAL ENVIRONMENT */
+.v3-systems{padding:108px 0;background:#f3f2ee}
+.v3-systems__diagram{display:grid;grid-template-columns:repeat(3,1fr);border-top:1px solid #aeb5b5;border-left:1px solid #aeb5b5}
+.v3-system{min-height:180px;padding:25px;border-right:1px solid #aeb5b5;border-bottom:1px solid #aeb5b5;display:flex;flex-direction:column;justify-content:flex-end;position:relative;background:rgba(255,255,255,.22)}
+.v3-system:before{content:"";position:absolute;left:24px;top:24px;width:7px;height:7px;background:#8b6b31}
+.v3-system--core{background:#0d1b25;color:#fff}.v3-system--core:before{background:#d9ad55}
+.v3-system small{position:absolute;left:44px;top:20px;font-size:9px;letter-spacing:.14em;color:#7b8589}.v3-system--core small{color:#9eafb9}
+.v3-system strong{font-size:28px;font-weight:500;letter-spacing:-.03em;margin-bottom:8px}.v3-system span{font-size:12px;color:#68747a}.v3-system--core span{color:#9eafb9}
+.v3-systems__note{max-width:820px;margin:24px 0 0;color:#6b7478;font-size:11px;line-height:1.65}
+@media(max-width:900px){.v3-systems__diagram{grid-template-columns:1fr 1fr}}@media(max-width:560px){.v3-systems__diagram{grid-template-columns:1fr}}
