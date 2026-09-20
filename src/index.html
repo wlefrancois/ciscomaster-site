@@ -54,12 +54,17 @@
 
 <section class="v3-systems"><div class="v3-shell">
 <div class="v3-section-head"><span>04 / ENVIRONMENT</span><h2>Assess the UC environment as a system—not a collection of boxes.</h2><p>CiscoMaster follows the relationships between call control, applications, edge services, endpoints and the infrastructure they depend on.</p></div>
-<div class="v3-ecosystem">
-<div class="v3-ecosystem__core"><small>CORE CALL CONTROL</small><strong>CUCM</strong><span>The operational center of the collaboration environment.</span></div>
-<div class="v3-ecosystem__group"><small>COLLABORATION SERVICES</small><div><span>Unity Connection</span><span>UCCX</span><span>IM &amp; Presence</span><span>Jabber</span><span>PCD</span><span>Expressway</span></div></div>
-<div class="v3-ecosystem__group"><small>VOICE &amp; SESSION EDGE</small><div><span>Cisco Gateways</span><span>CUBE</span><span>Oracle SBC</span><span>SIP / PSTN</span></div></div>
-<div class="v3-ecosystem__group"><small>ENDPOINTS &amp; UC APPLICATIONS</small><div><span>Phones &amp; endpoints</span><span>Callisto</span><span>Paging / queues</span><span>Other UC applications</span></div></div>
-<div class="v3-ecosystem__foundation"><small>OPERATIONAL FOUNDATION</small><div><span>DNS</span><span>Certificates</span><span>Network dependencies</span><span>Lifecycle</span><span>Recovery</span><span>Connected third-party systems</span></div></div>
+<div class="v3-ecosystem-v2">
+<div class="v3-ecosystem-v2__spine">
+<div><small>CORE</small><strong>CUCM</strong><span>Call control and cluster context</span></div>
+<i></i>
+<div><small>FOUNDATION</small><strong>Operational dependencies</strong><span>DNS · Certificates · Network · Lifecycle · Recovery</span></div>
+</div>
+<div class="v3-ecosystem-v2__domains">
+<section><small>COLLABORATION SERVICES</small><div><span>Unity Connection</span><span>UCCX</span><span>IM &amp; Presence</span><span>Jabber</span><span>PCD</span><span>Expressway</span></div></section>
+<section><small>VOICE &amp; SESSION EDGE</small><div><span>Cisco Gateways</span><span>CUBE</span><span>Oracle SBC</span><span>SIP / PSTN</span></div></section>
+<section><small>ENDPOINTS &amp; APPLICATIONS</small><div><span>Phones &amp; endpoints</span><span>Callisto</span><span>Paging / queues</span><span>Connected UC applications</span></div></section>
+</div>
 </div>
 <div class="v3-ecosystem__footer"><strong>Not limited to the systems shown.</strong><p>Scope follows the customer's actual collaboration environment. Cisco and third-party platforms can be included when relevant, with deeper specialized analysis scoped where required.</p></div>
 </div></section>
