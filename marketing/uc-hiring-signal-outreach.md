@@ -19,6 +19,10 @@ WDC, LLC
 CiscoMaster
 assessments@ciscomaster.com
 
+Business solicitation from WDC, LLC / CiscoMaster.  
+WDC, LLC — [VALID BUSINESS POSTAL ADDRESS REQUIRED BEFORE SEND]  
+If you would rather not receive future marketing email from WDC, reply with "opt out" and we will honor the request.
+
 ## Healthcare variant
 Subject: Cisco UC support while your voice team is hiring
 
@@ -36,6 +40,10 @@ Wayne LeFrancois
 WDC, LLC | CiscoMaster
 assessments@ciscomaster.com
 
+Business solicitation from WDC, LLC / CiscoMaster.  
+WDC, LLC — [VALID BUSINESS POSTAL ADDRESS REQUIRED BEFORE SEND]  
+If you would rather not receive future marketing email from WDC, reply with "opt out" and we will honor the request.
+
 ## Partner / MSP variant
 Subject: Additional Cisco UC delivery capacity
 
@@ -52,6 +60,10 @@ https://ciscomaster.com/partners/?utm_source=partner_hiring_signal&utm_medium=ou
 Wayne LeFrancois
 WDC, LLC
 assessments@ciscomaster.com
+
+Business solicitation from WDC, LLC / CiscoMaster.  
+WDC, LLC — [VALID BUSINESS POSTAL ADDRESS REQUIRED BEFORE SEND]  
+If you would rather not receive future marketing email from WDC, reply with "opt out" and we will honor the request.
 
 ## Follow-up 1
 Subject: Re: Cisco UC capacity
