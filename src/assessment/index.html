@@ -24,7 +24,7 @@ form.addEventListener('submit',async(e)=>{
    const response=await fetch('/api/lead',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify(d)});
    const result=await response.json();
    if(!response.ok||!result.ok) throw new Error(result.error||'Unable to send request');
-   form.reset(); status.className='v3-form-status v3-form-status--success'; status.innerHTML='<strong>Request received.</strong> Reference '+result.leadId+'. Check your email for confirmation.';
+   form.reset(); status.className='v3-form-status v3-form-status--success'; status.innerHTML='<strong>Thank you — your request has been received.</strong><br>A WDC Cisco UC engineer will review the information and respond as quickly as possible. We have also sent a confirmation to your email.<br><span>Reference: '+result.leadId+'</span>'; 
  }catch(err){
    status.className='v3-form-status v3-form-status--error'; status.innerHTML='<strong>We could not send the request.</strong> Please email <a href="mailto:assessments@ciscomaster.com">assessments@ciscomaster.com</a>.';
  }finally{button.disabled=false;button.textContent='Send request';}
