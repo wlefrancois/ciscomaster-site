@@ -37,8 +37,6 @@ export default async function handler(req, res) {
   }
 
   const b = typeof req.body === "string" ? JSON.parse(req.body || "{}") : (req.body || {});
-  if (clean(b.website)) return json(res, 200, { ok: true }); // honeypot
-
   const name = clean(b.name, 120);
   const company = clean(b.company, 160);
   const email = clean(b.email, 254);
