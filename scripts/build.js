@@ -5,6 +5,7 @@ const distDir = "dist";
 const activePages = [
   "index.html",
   "assessment",
+  "capacity",
   "assurance",
   "enterprise",
   "health-check",
