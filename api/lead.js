@@ -69,23 +69,25 @@ export default async function handler(req, res) {
   ).join("");
 
   try {
-    await sendEmail(apiKey, {
+    const internalDelivery = await sendEmail(apiKey, {
       from: fromEmail, to: [toEmail], reply_to: email,
       subject: `CiscoMaster lead — ${service} — ${company}`,
       html: `<h2>New CiscoMaster request</h2><table style="border-collapse:collapse;font-family:Arial,sans-serif;font-size:14px">${rows}</table>`
     });
+    console.log("CiscoMaster lead accepted by email provider", { leadId, providerId: internalDelivery?.id || "unknown", to: toEmail, from: fromEmail });
 
     try {
-      await sendEmail(apiKey, {
+      const acknowledgement = await sendEmail(apiKey, {
         from: fromEmail, to: [email], reply_to: toEmail,
         subject: "We received your CiscoMaster request",
         html: `<div style="font-family:Arial,sans-serif;max-width:620px"><h2>We received your request.</h2><p>Hi ${esc(name)},</p><p>WDC received your CiscoMaster request for <strong>${esc(service)}</strong>. We’ll review the environment, objective and timing and follow up with the appropriate next step.</p><p><strong>Reference:</strong> ${esc(leadId)}</p><p>Submitting a request does not authorize production changes or commit you to a paid engagement.</p><p>WDC, LLC<br>CiscoMaster</p></div>`
       });
+      console.log("CiscoMaster acknowledgement accepted by email provider", { leadId, providerId: acknowledgement?.id || "unknown", to: email, from: fromEmail });
     } catch (ackError) {
-      console.error("Lead acknowledgement failed", ackError);
+      console.error("Lead acknowledgement failed", { leadId, message: ackError?.message || String(ackError) });
     }
 
-    return json(res, 200, { ok: true, leadId });
+    return json(res, 200, { ok: true, leadId, deliveryAccepted: true });
   } catch (error) {
     console.error("Lead delivery failed", error);
     return json(res, 502, { ok: false, error: "Unable to deliver request" });
